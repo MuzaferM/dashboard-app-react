@@ -4,6 +4,7 @@
 .recent-orders {
   padding: 1.25rem;
   color: $white;
+  overflow-x: auto;
 
   .recent-order-header {
     margin-bottom: 16px;
