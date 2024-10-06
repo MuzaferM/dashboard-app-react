@@ -1,0 +1,31 @@
+@import "./styles/global.scss";
+@import "./styles/variables";
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  background-color: $secondary-bg;
+  overflow-y: auto;
+}
+
+.main {
+  flex: 1;
+  background-color: $secondary-bg;
+  color: $primary-bg;
+  margin-left: 250px;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    margin-left: 0;
+  }
+}

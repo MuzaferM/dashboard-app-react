@@ -1,0 +1,77 @@
+@import "../../styles/_variables";
+
+.overview-wrapper {
+  background-color: $secondary-bg;
+  padding: 1.25rem 1.25rem 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .overview-header {
+    color: $white;
+  }
+
+  select {
+    background-color: $primary-bg;
+    color: $white;
+    padding: 0.5rem;
+    border-radius: $border-radius;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  color: $white;
+
+  .overview-card {
+    background-color: $secondary-bg;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid $light_gray;
+
+    h2 {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .value {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+      text-align: left;
+    }
+
+    .change {
+      font-size: 0.875rem;
+    }
+
+    .change-wrapper {
+      text-align: left;
+    }
+
+    .positive {
+      color: $green;
+      border-radius: 3px;
+      padding: 2px;
+      background: $green_shade;
+    }
+
+    .negative {
+      color: $red;
+      border-radius: 3px;
+      padding: 2px;
+      background: $red_shade;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .overview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

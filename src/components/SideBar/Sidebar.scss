@@ -1,0 +1,120 @@
+@import "../../styles/_variables";
+
+.sidebar {
+  background-color: $primary-bg;
+  color: $white;
+  width: 12rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+
+  .sidebar-header {
+    display: flex;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .header-logo {
+    margin-right: 4px;
+  }
+
+  .sidebar-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 0.5rem 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .upcoming-events {
+    margin-top: 0.25rem;
+
+    p {
+      color: $gray;
+      font-weight: 600;
+    }
+  }
+
+  .profile-section {
+    padding: 6px;
+    background-color: $secondary-bg;
+    border-radius: 6px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+}
+
+.hamburger-icon {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  cursor: pointer;
+
+  ion-icon {
+    color: $gray;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .sidebar-header {
+    margin-top: 3rem;
+  }
+
+  .profile-section {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hamburger-icon {
+    display: none;
+  }
+
+  .sidebar {
+    transform: translateX(0);
+  }
+}

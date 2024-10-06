@@ -1,0 +1,36 @@
+// src/components/scss/recentOrders.scss
+@import '../../styles/_variables';
+
+.recent-orders {
+  padding: 1.25rem;
+  color: $white;
+
+  .recent-order-header {
+    margin-bottom: 16px;
+  }
+
+  table {
+    width: 100%;
+    text-align: left;
+    border-radius: $border-radius;
+
+    thead {
+      background-color: $secondary-bg;
+
+      th {
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: $gray;
+      }
+    }
+
+    tbody {
+
+      td {
+        padding: 0.75rem;
+        border-top: 1px solid $light_gray;
+      }
+    }
+  }
+}

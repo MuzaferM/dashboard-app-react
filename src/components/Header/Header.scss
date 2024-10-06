@@ -1,0 +1,28 @@
+// src/components/scss/header.scss
+@import '../../styles/_variables';
+
+.header {
+  background-color: $secondary-bg;
+  padding: 1.25rem;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .profile-section-top {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px){
+  .header {
+    .profile-section-top {
+      display: block;
+    }
+  }
+}

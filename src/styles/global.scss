@@ -1,0 +1,27 @@
+@import './_variables';
+
+body {
+  margin: 0;
+  font-family: $font-primary;
+  background-color: $primary-bg;
+  color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button, input {
+  font-family: inherit;
+  outline: none;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
