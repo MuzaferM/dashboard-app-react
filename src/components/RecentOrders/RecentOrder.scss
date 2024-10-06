@@ -1,10 +1,9 @@
-// src/components/scss/recentOrders.scss
 @import '../../styles/_variables';
 
 .recent-orders {
   padding: 1.25rem;
   color: $white;
-  overflow-x: auto;
+  overflow-x: auto !important;
 
   .recent-order-header {
     margin-bottom: 16px;

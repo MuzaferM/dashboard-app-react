@@ -1,7 +1,7 @@
 import React from "react";
-import "./Header.scss";
 import ProfileDropdown from "../ProfileDropdown/ProfileDropdown";
 import { USER_INFO } from "../../constants/constants";
+import "./Header.scss";
 
 const Header = () => {
   return (

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Sidebar.scss";
 import ProfileDropdown from "../ProfileDropdown/ProfileDropdown";
 import {
   NAV_LINKS,
   UPCOMING_EVENTS,
   SUPPORT_OPTIONS,
 } from "../../constants/constants";
+import "./Sidebar.scss";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);

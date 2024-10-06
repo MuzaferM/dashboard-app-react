@@ -1,7 +1,6 @@
-// src/components/Overview.js
 import React from "react";
-import "./Overview.scss";
 import { OVERVIEW_DATA } from "../../constants/constants";
+import "./Overview.scss";
 
 const Overview = () => {
   return (
