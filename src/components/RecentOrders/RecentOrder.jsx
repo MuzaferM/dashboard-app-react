@@ -21,7 +21,7 @@ const RecentOrders = () => {
           {RECENT_ORDERS.map((order) => (
             <tr key={order.orderNumber}>
               <td>{order.orderNumber}</td>
-              <td>{order.date}</td>
+              <td className='date-column'>{order.date}</td>
               <td>{order.customer}</td>
               <td>{order.event}</td>
               <td>{order.amount}</td>

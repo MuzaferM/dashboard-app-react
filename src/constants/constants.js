@@ -95,4 +95,32 @@ export const RECENT_ORDERS = [
     event: "We All Look The Same",
     amount: "$150.00",
   },
+  {
+    orderNumber: 3007,
+    date: "Apr 12, 2024",
+    customer: "Alice Johnson",
+    event: "Art in the Park",
+    amount: "$120.00",
+  },
+  {
+    orderNumber: 3008,
+    date: "Apr 13, 2024",
+    customer: "Bob Smith",
+    event: "Jazz Night",
+    amount: "$200.00",
+  },
+  {
+    orderNumber: 3009,
+    date: "Apr 14, 2024",
+    customer: "Charlie Brown",
+    event: "Food Festival",
+    amount: "$75.00",
+  },
+  {
+    orderNumber: 3010,
+    date: "Apr 15, 2024",
+    customer: "Dana Scully",
+    event: "Comedy Show",
+    amount: "$90.00",
+  },
 ];

@@ -3,12 +3,13 @@
 .sidebar {
   background-color: $primary-bg;
   color: $white;
-  width: 12rem;
+  width: 13rem;
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,7 +18,7 @@
 
   .sidebar-header {
     display: flex;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
   }
@@ -61,7 +62,7 @@
     border-radius: 6px;
     width: 100%;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -97,7 +98,7 @@
   }
 
   .sidebar-header {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .profile-section {

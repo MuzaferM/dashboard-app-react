@@ -28,8 +28,13 @@
     tbody {
 
       td {
+        font-weight: 500;
         padding: 0.75rem;
         border-top: 1px solid $light_gray;
+      }
+
+      .date-column {
+        color: $gray;
       }
     }
   }
